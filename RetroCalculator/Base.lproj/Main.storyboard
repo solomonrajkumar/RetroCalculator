@@ -16,10 +16,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Calculator View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RetroCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CalculatorViewController" customModule="RetroCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -147,6 +147,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WJ-3f-2ip">
                                                 <rect key="frame" x="169" y="0.0" width="74.5" height="65"/>
                                                 <state key="normal" image="subtract"/>
+                                                <connections>
+                                                    <action selector="subtractButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d6X-kx-SPO"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -156,6 +159,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMd-Cx-Qv9">
                                                 <rect key="frame" x="0.0" y="0.0" width="74.5" height="65"/>
                                                 <state key="normal" image="multiply"/>
+                                                <connections>
+                                                    <action selector="multiplyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TqN-T8-lRn"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuy-nP-Ukh">
                                                 <rect key="frame" x="84.5" y="0.0" width="74.5" height="65"/>
@@ -167,6 +173,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsC-fe-qbt">
                                                 <rect key="frame" x="169" y="0.0" width="74.5" height="65"/>
                                                 <state key="normal" image="divide"/>
+                                                <connections>
+                                                    <action selector="divideButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sgA-fQ-I7y"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
